@@ -1,5 +1,5 @@
 ## Personal Website
 
-[enriquecardenas.com](enriquecardenas.com)
+[enriquecardenas.com](www.enriquecardenas.com)
 
 Contains a portfolio, blog, and about section.
