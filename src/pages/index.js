@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
-import BlogList from '../components/BlogList'
+import BlogList from '../components/bloglist'
 
 
 export default ({ data }) => {
