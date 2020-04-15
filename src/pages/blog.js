@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import BlogList from '../components/bloglist'
+import BlogList from '../components/BlogList'
 
 export default ({ data }) => {
   return (
