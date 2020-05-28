@@ -1,5 +1,4 @@
-## Personal Website
+# Personal Website
 
-[enriquecardenas.com](https://enriquecardenas.com/)
-
-Contains a portfolio, blog, and about section.
+This repo contains the source code to my website [enriquecardenas.com](https://enriquecardenas.com/) that is hosted
+with Netlify.
