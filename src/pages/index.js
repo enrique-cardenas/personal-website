@@ -16,7 +16,7 @@ export default ({ data }) => {
             border-bottom: 1px solid;
           `}
         >
-          Blog
+          Blog Posts
         </h1>
         <BlogList />
       </div>
