@@ -41,9 +41,6 @@ module.exports = {
         plugins: [
         {
           resolve: "gatsby-remark-external-links",
-          options: {
-            target: "_black"
-          }
         }
         ]
       }
