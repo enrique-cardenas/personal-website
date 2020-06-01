@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Projects from '../components/Projects'
 
 export default ({ data }) => (
   <Layout>
@@ -13,5 +14,6 @@ export default ({ data }) => (
         target="_blank" rel="noopener noreferrer">github</a>.
     </p>
 
+    <Projects />
   </Layout>
 )

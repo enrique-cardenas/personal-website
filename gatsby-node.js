@@ -30,8 +30,6 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-
-    console.log('path', node.fields.slug)
     if(node.fields.slug.includes('/blog-entries/')){
       
       createPage({
@@ -45,10 +43,10 @@ exports.createPages = async ({ graphql, actions }) => {
       })
     }
 
-    if(node.fields.slug.includes('/portfolio-projects/')){
+    if(node.fields.slug.includes('/projects/')){
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/portfolio-project.js`),
+        component: path.resolve(`./src/templates/Project.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
