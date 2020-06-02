@@ -2,18 +2,22 @@ import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
+import Img from "gatsby-image"
 
-/**
 const projectContainer = css`
-  border-radius: .5em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 10px;
-  p {
-    font-size: .9em;
+  display: flex;
+  margin-bottom: .5em;
+`
+const imageContainer = css`
+  flex: 0 0 150px;
+`
+const contentContainer = css`
+  padding-left: 10px;
+  padding-top: 3px;
+  h3 {
+    margin-bottom: ${rhythm(1 / 4)};
   }
 `
-
-*/
 
 const Projects = ({ children }) => {
 
@@ -27,6 +31,13 @@ const Projects = ({ children }) => {
               id
               frontmatter {
                 title
+                featuredImage {
+                  childImageSharp {
+                    fluid(maxWidth: 800) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
               fields {
                 slug
@@ -38,7 +49,6 @@ const Projects = ({ children }) => {
       }
     `
   )
-
   const projects = data.allMarkdownRemark.edges.filter(({ node }) =>  node.fields.slug.includes('/projects/'))
 
   return (
@@ -52,20 +62,17 @@ const Projects = ({ children }) => {
               color: inherit;
             `}
           >
-            <h3
-              css={css`
-                margin-bottom: ${rhythm(1 / 4)};
-              `}
-            >
-              {node.frontmatter.title}{" "}
-              <span
-                css={css`
-                  color: #555;
-                `}
-              >
-              </span>
-            </h3>
-            <p>{node.excerpt}</p>
+            <div css={projectContainer}>
+              <div css={imageContainer}>
+                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+              </div>
+              <div css={contentContainer}>
+                <h3>
+                  {node.frontmatter.title}
+                </h3>
+                <p>{node.excerpt}</p>
+              </div>
+            </div>
           </Link>
         </div>
       ))}

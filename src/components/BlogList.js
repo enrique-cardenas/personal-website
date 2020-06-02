@@ -27,11 +27,12 @@ export default ({ children }) => {
       }
     `
   )
+  let blogs = data.allMarkdownRemark.edges.filter(({ node }) =>  node.fields.slug.includes('/blog-entries/'))
 
   return (
     <div>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      <h4>{blogs.length} Posts</h4>
+      {blogs.map(({ node }) => (
         <div key={node.id}>
           <Link
             to={node.fields.slug}
