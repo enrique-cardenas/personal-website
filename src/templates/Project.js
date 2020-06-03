@@ -6,7 +6,6 @@ import Img from "gatsby-image"
 
 import rehypeReact from "rehype-react"
 import ProjectImage from "../components/portfolio/ProjectImage"
-import ImageWrapper from "../components/ImageWrapper"
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
