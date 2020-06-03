@@ -4,8 +4,7 @@ featuredImage: ../../images/freecodecamp/freecodecamp-logo.png
 
 ---
 
-This page contains all of the free code camp projects I have completed.
-At the moment I only have the "Responsive Web Design" projects because the
+This page contains some of the free code camp projects I have completed.
 
 ## Responsive Web Design
 
