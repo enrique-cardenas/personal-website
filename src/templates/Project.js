@@ -4,6 +4,15 @@ import Layout from "../components/layout"
 import { css } from "@emotion/core"
 import Img from "gatsby-image"
 
+import rehypeReact from "rehype-react"
+import ProjectImage from "../components/portfolio/ProjectImage"
+import ImageWrapper from "../components/ImageWrapper"
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "project-image": ProjectImage }
+}).Compiler
+
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -21,8 +30,10 @@ export default ({ data }) => {
           `}
           fluid={featuredImgFluid} 
         />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <div>{renderAst(post.htmlAst)}</div>
       </div>
+      
     </Layout>
   )
 }
@@ -30,7 +41,7 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      htmlAst
       frontmatter {
         title
         featuredImage {

@@ -41,10 +41,32 @@ module.exports = {
         plugins: [
         {
           resolve: "gatsby-remark-external-links",
-        }
+        },
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 400,
+            linkImagesToOriginal: false
+          },
+        },
+        `gatsby-remark-component`,
+        {
+          resolve: `gatsby-remark-custom-image-component`,
+          options: {
+            // plugin options
+            componentName: 'project-image',
+            imagePropName: 'src',
+            sharpMethod: 'fluid',
+            // fluid's arguments
+            quality: 50,
+            maxWidth: 400,
+          }
+        },
         ]
       }
     },
+    `gatsby-remark-images`
+
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
