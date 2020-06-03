@@ -9,7 +9,7 @@ export default ({ data }) => (
       Currently working on designing this page but for now here's
       a <a href="https://enriquecardenas.netlify.com/projects/portfolio.html" 
           target="_blank" rel="noopener noreferrer">link</a> to 
-      my old website's portfolio page. I also have some more proejcts in my {' '}
+      my old website's portfolio page. I also have some more projects in my {' '}
       <a href="https://github.com/enrique-cardenas"
         target="_blank" rel="noopener noreferrer">github</a>.
     </p>
