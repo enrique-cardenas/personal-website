@@ -6,10 +6,11 @@ import Img from "gatsby-image"
 
 import rehypeReact from "rehype-react"
 import ProjectImage from "../components/portfolio/ProjectImage"
+import QuadImageWrapper from "../components/portfolio/QuadImageWrapper"
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "project-image": ProjectImage }
+  components: { "project-image": ProjectImage, "quad-image-wrapper": QuadImageWrapper }
 }).Compiler
 
 
@@ -26,6 +27,7 @@ export default ({ data }) => {
             width: 225px;
             height: 225px;
             margin: auto;
+            margin-bottom: 15px;
           `}
           fluid={featuredImgFluid} 
         />

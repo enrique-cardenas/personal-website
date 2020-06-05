@@ -1,7 +1,5 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { rhythm } from "../../utils/typography"
-
 
 const projectContainer = css`
   display: flex;
@@ -16,13 +14,10 @@ const contentContainer = css`
 `
 
 const ProjectImage = (props) => {
-
-  console.log("ProjectImage props", props)
-
   return (
     <div css={projectContainer}>
       <div css={imageContainer}>
-        <img src={props.src} srcSet={props.srcSet} />
+        <img src={props.src} srcSet={props.srcSet} alt={props.title}/>
       </div>
       <div css={contentContainer}>
         <h3>
