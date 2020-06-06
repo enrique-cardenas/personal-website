@@ -19,7 +19,7 @@ how it covered Javascript ES6 syntax, callbacks, promises, and async/await.
 
 ## Country Data
 
-This application uses React to display country data. Country data is fetched from the API https://restcountries.eu.
+This application uses just React to display country data. Country data is fetched from the API https://restcountries.eu.
 When a single country is viewed, the weather report for the capital is shown. The API to fetch the weather report is retrieved from
 https://openweathermap.org/
 
@@ -41,8 +41,28 @@ This blog list application allows users to save information about interesting bl
     src4="fullstackopen/blog-list/users-page.png" alt4="users page image"
     >
 </quad-image-wrapper>
+> Built with React, Redux, Node.js, Express, and MongoDB
 
 https://github.com/enrique-cardenas/blog-list-frontend
 https://github.com/enrique-cardenas/blog-list-backend
 
 [live demo hosted on heroku](https://arcane-tundra-01783.herokuapp.com/)
+
+## Mini Library
+
+This mini library application allows users to log in, post a book, view books posted, view authors, filter books by genre,
+and view recommended books based on your favorite genre.
+
+<quad-image-wrapper 
+    src1="fullstackopen/mini-library/login-page.png" alt1="login page image"
+    src2="fullstackopen/mini-library/authors-page.png" alt2="blog list page image"
+    src3="fullstackopen/mini-library/books-page.png" alt3="blog example image"
+    src4="fullstackopen/mini-library/add-book-page.png" alt4="users page image"
+    >
+</quad-image-wrapper>
+<image-wrapper src="fullstackopen/mini-library/recommended-books-page.png" alt="recommended books page image">
+</image-wrapper>
+
+> Built with React, Apollo GraphQL client/server, and MongoDB
+
+https://github.com/enrique-cardenas/graphql-mini-library

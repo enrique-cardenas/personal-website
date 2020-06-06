@@ -7,10 +7,11 @@ import Img from "gatsby-image"
 import rehypeReact from "rehype-react"
 import ProjectImage from "../components/portfolio/ProjectImage"
 import QuadImageWrapper from "../components/portfolio/QuadImageWrapper"
+import ImageWrapper from "../components/portfolio/ImageWrapper"
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "project-image": ProjectImage, "quad-image-wrapper": QuadImageWrapper }
+  components: { "project-image": ProjectImage, "quad-image-wrapper": QuadImageWrapper, "image-wrapper": ImageWrapper }
 }).Compiler
 
 
