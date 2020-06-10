@@ -37,7 +37,6 @@ function SEO({ description, lang, meta, title }) {
     author: author
   }
 
-  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
@@ -48,7 +47,10 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: seo.description,
+        },
+        {
+          name: `description`,
         },
         {
           property: `og:title`,
@@ -56,7 +58,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: seo.description,
         },
         {
           property: `og:type`,
@@ -76,7 +78,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: seo.description,
         },
       ].concat(meta)}
     />
