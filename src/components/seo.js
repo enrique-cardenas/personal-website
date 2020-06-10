@@ -44,13 +44,11 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={seo.title}
+      titleTemplate={seo.title}
       meta={[
         {
           name: `description`,
           content: seo.description,
-        },
-        {
-          name: `description`,
         },
         {
           property: `og:title`,
