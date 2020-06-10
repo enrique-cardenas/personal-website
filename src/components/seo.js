@@ -25,6 +25,18 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  const {
+    defaultTitle,
+    defaultDescription,
+    author
+  } = site.siteMetadata
+
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    author: author
+  }
+
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -32,8 +44,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={seo.title}
       meta={[
         {
           name: `description`,
@@ -41,7 +52,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: seo.title,
         },
         {
           property: `og:description`,
@@ -61,7 +72,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: seo.title,
         },
         {
           name: `twitter:description`,
