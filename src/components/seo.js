@@ -41,6 +41,7 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet title={seo.title} titleTemplate={seo.title}>
       <meta name="description" content={seo.description} />
+      <meta name="google-site-verification" content="YCBIAdAapWFm5S-pM_kInkrfxmYJyTPHurMEqaz4WaE" />
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
@@ -64,7 +65,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO
