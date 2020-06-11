@@ -39,47 +39,18 @@ function SEO({ description, lang, meta, title }) {
 
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={seo.title}
-      titleTemplate={seo.title}
-      meta={[
-        {
-          name: `description`,
-          content: seo.description,
-        },
-        {
-          property: `og:title`,
-          content: seo.title,
-        },
-        {
-          property: `og:description`,
-          content: seo.description,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: seo.title,
-        },
-        {
-          name: `twitter:description`,
-          content: seo.description,
-        },
-      ].concat(meta)}
-    />
+    <Helmet title={seo.title} titleTemplate={seo.title}>
+      <meta name="description" content={seo.description} />
+      {seo.title && <meta property="og:title" content={seo.title} />}
+      {seo.description && (
+        <meta property="og:description" content={seo.description} />
+      )}
+      {seo.title && <meta name="twitter:title" content={seo.title} />}
+      {seo.description && (
+        <meta name="twitter:description" content={seo.description} />
+      )}
+      {seo.image && <meta name="twitter:image" content={seo.image} />}
+    </Helmet>
   )
 }
 
