@@ -25,8 +25,8 @@ export default ({ data }) => {
         <h1 css={css`text-align: center;`}>{post.frontmatter.title}</h1>
         <Img
           css={css`
-            width: 225px;
-            height: 225px;
+            width: 100%;
+            height: 100%;
             margin: auto;
             margin-bottom: 15px;
           `}

@@ -49,7 +49,7 @@ const Projects = ({ children }) => {
       }
     `
   )
-  const projects = data.allMarkdownRemark.edges.filter(({ node }) =>  node.fields.slug.includes('/projects/'))
+  const projects = data.allMarkdownRemark.edges.filter(({ node }) =>  node.fields.slug.includes('/projects/')).reverse()
 
   return (
     <div>
