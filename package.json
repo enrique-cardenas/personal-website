@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple website to host my portfolio, blog, and web skills",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Enrique Cardenas <enriquecardenas96@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "gatsby": "^2.19.45",
