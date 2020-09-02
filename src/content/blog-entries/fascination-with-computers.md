@@ -1,6 +1,6 @@
 ---
 title: "How I became fascinated with computers, technology, and the internet"
-date: "2020-9-1"
+date: "2020-09-01"
 ---
 
 I became fascinated by computers at a young age. Like many kids, I started by playing
