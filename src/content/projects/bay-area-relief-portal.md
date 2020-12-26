@@ -1,6 +1,7 @@
 ---
 title: "Bay Area Relief Portal"
 featuredImage: ../../images/bay-area-relief/homepage.png
+order: 3
 
 ---
 

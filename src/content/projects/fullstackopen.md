@@ -1,7 +1,7 @@
 ---
 title: "Full Stack Open"
 featuredImage: ../../images/fullstackopen/fullstackopen-logo.png
-
+order: 2
 ---
 
 This page contains some of the exercises I have completed for this course.

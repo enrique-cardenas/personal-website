@@ -1,7 +1,7 @@
 ---
 title: "Shaska Deli Cafe"
 featuredImage: ../../images/shaskadelicafe/home.png
-
+order: 4
 ---
 
 Rewrote entire website from Wordpress to React/Gatsby to significantly improve load times. 

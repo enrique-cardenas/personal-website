@@ -1,6 +1,7 @@
 ---
 title: "Free Code Camp Projects"
 featuredImage: ../../images/freecodecamp/freecodecamp-logo.png
+order: 1
 
 ---
 

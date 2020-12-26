@@ -37,6 +37,7 @@ const Projects = ({ children }) => {
                     }
                   }
                 }
+                order
               }
               fields {
                 slug
@@ -49,10 +50,11 @@ const Projects = ({ children }) => {
     `
   )
   const projects = data.allMarkdownRemark.edges.filter(({ node }) =>  node.fields.slug.includes('/projects/'))
+    .sort((a, b) => b.node.frontmatter.order - a.node.frontmatter.order)
 
   return (
     <div>
-      {projects.map(({ node }) => (
+        {projects.map(({ node }) => (
         <div key={node.id}>
           <Link
             to={node.fields.slug}
