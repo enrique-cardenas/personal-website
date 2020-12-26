@@ -1,7 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import { rhythm } from "../utils/typography"
 import Img from "gatsby-image"
 
 const projectContainer = css`
@@ -15,7 +14,7 @@ const contentContainer = css`
   padding-left: 10px;
   padding-top: 3px;
   h3 {
-    margin-bottom: ${rhythm(1 / 4)};
+    margin-bottom: .25em;
   }
 `
 

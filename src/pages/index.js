@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import BlogList from '../components/BlogList'
 import SEO from "../components/seo"
 
