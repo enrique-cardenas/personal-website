@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import SkillIcon from "../components/SkillIcon"
+import { Link } from "gatsby"
+
 
 import { css } from "@emotion/core"
 
@@ -13,7 +15,6 @@ import ResponsiveDesign from "../assets/icons/tablet-phone-and-browser.svg"
 
 export default ({location}) => (
   <Layout>
-    {console.log('location', location.origin)}
     <h1>About Me</h1>
     <p>
       I am a software engineer focusing on full stack development located in the Bay Area.
@@ -21,7 +22,7 @@ export default ({location}) => (
     </p>
 
     <p>
-      I am currently working on a <a href={`${location.origin}/projects/bay-area-relief-portal/`}>web portal</a> with the aim of helping small businesses and non-profits, in the San Francisco Bay Area,
+      I am currently working on a <Link to="/projects/bay-area-relief-portal/">web portal</Link> with the aim of helping small businesses and non-profits, in the San Francisco Bay Area,
       find financial support.
     </p>
     <br />
