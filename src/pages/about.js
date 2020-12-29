@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import SkillIcon from "../components/SkillIcon"
+
 import { css } from "@emotion/core"
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGitAlt, FaCogs, FaNode } from "react-icons/fa";
@@ -10,9 +11,9 @@ import ResponsiveDesign from "../assets/icons/tablet-phone-and-browser.svg"
 
 
 
-export default () => (
+export default ({location}) => (
   <Layout>
-    {console.log('responsive design', ResponsiveDesign)}
+    {console.log('location', location.origin)}
     <h1>About Me</h1>
     <p>
       I am a software engineer focusing on full stack development located in the Bay Area.
@@ -20,8 +21,8 @@ export default () => (
     </p>
 
     <p>
-      I am an active volunteer at Code For San Francisco and am currently working on a Bay Area Relief Portal with the aim of helping small businesses and non-profits find
-      financial support.
+      I am currently working on a <a href={`${location.origin}/projects/bay-area-relief-portal/`}>web portal</a> with the aim of helping small businesses and non-profits, in the San Francisco Bay Area,
+      find financial support.
     </p>
     <br />
     <h2>Skills</h2>
