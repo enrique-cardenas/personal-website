@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import SEO from "../components/seo"
 import Layout from "../components/Layout/layout"
 import Projects from '../components/Projects'
 import SkillIcon from "../components/SkillIcon"
@@ -12,7 +13,7 @@ import { GrMysql } from "react-icons/gr";
 import ResponsiveDesign from "../assets/icons/tablet-phone-and-browser.svg"
 
 
-export default ({location}) => {
+export default ({data, location}) => {
   const commentRef = useRef();
   useEffect( () => {
     commentRef.current.innerHTML = `<!-- This icon by Freepik from "https://www.flaticon.com/" --> ${commentRef.current.innerHTML}`;
@@ -20,6 +21,8 @@ export default ({location}) => {
 
   return (
     <Layout>
+      {console.log(data)}
+      <SEO/>
       <p>Hi, my name is Enrique and welcome to my website. </p>
       <br />
 

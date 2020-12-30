@@ -25,17 +25,17 @@ export default ({location}) => {
         I am a software engineer focusing on full stack development located in the Bay Area.
         I completed my B.S. in Computer Science with a minor in Math from San Jose State University.
       </p>
-
       <p>
-        I am currently working on a <Link to="/projects/bay-area-relief-portal/">web portal</Link> with the aim of helping small businesses and non-profits, in the San Francisco Bay Area,
-        find financial support.
+        I am currently volunteering in Code For San Francisco and helping create a {' '}
+        <Link to="/projects/bay-area-relief-portal/">web portal</Link> with the aim of helping small
+        businesses and non-profits, in the San Francisco Bay Area, find financial support.
       </p>
       <br />
-      <h2>Skills</h2>
+      <h2>Skills & Tools</h2>
+      <p>I have working familiarity with the following technologies.</p>
       <div css={css`display: flex; flex-wrap: wrap; justify-content: space-evenly;`}>
         <SkillIcon icon={FaHtml5} name="HTML5"/>
         <SkillIcon icon={FaCss3} name="CSS3" />
-        {/*  */}
         <SkillIcon src={ResponsiveDesign} 
           alt="Responsive Design" 
           name="Responsive Design" 
