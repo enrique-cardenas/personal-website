@@ -12,7 +12,8 @@ const IconContainer = css`
   text-align: center;
 `
 
-export default (props) => {
+export default React.forwardRef((props, ref) => {
+  
   if(props.icon){
     const Icon = props.icon
 
@@ -26,10 +27,19 @@ export default (props) => {
     )
   }
 
+  if(ref){
+    return (
+      <div css={IconContainer} ref={ref}>
+        <img src={props.src} alt={props.alt} css={css` height: 5em; width: 5em;`}/>
+        <p>{props.name}</p>
+      </div>
+    )
+  }
+
   return (
     <div css={IconContainer}>
       <img src={props.src} alt={props.alt} css={css` height: 5em; width: 5em;`}/>
       <p>{props.name}</p>
     </div>
   )
-}
+})
