@@ -30,12 +30,13 @@ export default ({location}) => {
       </p>
 
       <p>
-        I am currently working on a <Link to="/projects/bay-area-relief-portal/">web portal</Link> with the aim of helping small businesses and non-profits, in the San Francisco Bay Area,
-        find financial support.
+        I am currently volunteering in Code For San Francisco and helping create a {' '}
+        <Link to="/projects/bay-area-relief-portal/">web portal</Link> with the aim of helping small
+        businesses and non-profits, in the San Francisco Bay Area, find financial support.
       </p>
       <br />
       <h2>Skills & Tools</h2>
-      <p>Here are some of the skills, tools, and technologies I've been using a lot recently.</p>
+      <p>I have working familiarity with the following technologies.</p>
       <div css={css`display: flex; flex-wrap: wrap; justify-content: space-evenly;`}>
         <SkillIcon icon={FaHtml5} name="HTML5"/>
         <SkillIcon icon={FaCss3} name="CSS3" />
@@ -59,7 +60,7 @@ export default ({location}) => {
       <br />
       <h2>Web Projects</h2>
       <p>
-      Here are some the things I've been working on recently.
+        Here are some the things I've been working on recently.
       </p>
       <Projects />
     
