@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import SEO from "../components/seo"
 import Layout from "../components/Layout/layout"
 import SkillIcon from "../components/SkillIcon"
 import { Link } from "gatsby"
@@ -20,6 +21,7 @@ export default ({location}) => {
 
   return (
     <Layout>
+      <SEO/>
       <h1>About Me</h1>
       <p>
         I am a software engineer focusing on full stack development located in the Bay Area.

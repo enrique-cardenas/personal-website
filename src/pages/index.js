@@ -21,7 +21,6 @@ export default ({data, location}) => {
 
   return (
     <Layout>
-      {console.log(data)}
       <SEO/>
       <p>Hi, my name is Enrique and welcome to my website. </p>
       <br />
