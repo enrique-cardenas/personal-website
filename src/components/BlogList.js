@@ -32,7 +32,7 @@ export default ({ children }) => {
     <div>
       <h4>{blogs.length} Posts</h4>
       {blogs.map(({ node }) => (
-        <div key={node.id}>
+        <div key={node.id} css={css` margin-bottom: 3em; `}>
           <Link
             to={node.fields.slug}
             css={css`
@@ -42,10 +42,11 @@ export default ({ children }) => {
           >
             <h3
               css={css`
-                margin-bottom: .25em;
+                margin-bottom: -.5em;
               `}
             >
               {node.frontmatter.title}{" "}
+              <br />
               <span
                 css={css`
                   color: #555;
