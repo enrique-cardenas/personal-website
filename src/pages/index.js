@@ -13,7 +13,7 @@ import { GrMysql } from "react-icons/gr";
 import ResponsiveDesign from "../assets/icons/tablet-phone-and-browser.svg"
 
 
-export default ({data, location}) => {
+export default () => {
   const commentRef = useRef();
   useEffect( () => {
     commentRef.current.innerHTML = `<!-- This icon by Freepik from "https://www.flaticon.com/" --> ${commentRef.current.innerHTML}`;

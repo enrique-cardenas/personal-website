@@ -16,7 +16,9 @@ export default ({ data }) => {
           >
             {post.frontmatter.date}
           </h3>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} 
+          css={css` .gatsby-resp-image-wrapper { max-width: 600px !important; }`} 
+        />
       </div>
     </Layout>
   )
