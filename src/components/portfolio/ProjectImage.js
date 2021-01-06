@@ -7,7 +7,7 @@ const projectContainer = css`
   justify-content: center;
   margin-bottom: .5em;
   
-  @media (min-width: 760px) {
+  @media (min-width: 1024px) {
     justify-content: space-evenly;
   }
 `
