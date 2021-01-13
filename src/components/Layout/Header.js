@@ -34,54 +34,49 @@ const navbarRight = css`
   margin-inline-end: 0px;
 `
 const navbarRightResponsive = css`
-  ${navbarRight};
-  @media (max-width: 600px) {
-    float: none;
+  float: none;
+  @media only screen and (min-width: 768px) {
+    ${navbarRight};
   }
 `
 const navbarItem = css`
-  padding-right: 15px;
-  color: gray;
-  &:hover {
-    color: black;
-  }
+  display: none;
 
-  @media (max-width: 600px){
-    display: none
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+    padding-right: 15px;
+    color: gray;
+    &:hover {
+      color: black;
+    }
   }
 `
 const navbarItemResponsive = css`
-  ${navbarItem}
-  @media (max-width: 600px){
-    float: none;
-    display: block;
-    text-align: left;
-
-    color: gray;
-    &:hover {
-      color: black;
-    }
+  color: gray;
+  display: block;
+  float: none;
+  padding-bottom: 15px;
+  text-align: left;
+  &:hover {
+    color: black;
+  }
+  @media only screen and (min-width: 768px) {
+    ${navbarItem}
   }
 `
 const navbarIcon = css`
-  display: none;
+  color: gray;
 
-  @media (max-width: 600px){
-    display: block;
-    float: right;
-    color: gray;
-    &:hover {
-      color: black;
-    }
+  @media (min-width: 768px) {
+    display: none;
   }
 `
 const navbarIconResponsive = css`
   ${navbarIcon}
-  @media (max-width: 600px){
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+  color: black;
+  position: absolute;
+  top: 1em;
+  right: 0;
 `
 
 const Header = () => {

@@ -62,7 +62,7 @@ export default () => {
       <br />
       <h2>Web Projects</h2>
       <p>
-        Here are some the things I've been working on recently.
+        Here are some the things I've been working on recently. Click on each one to read more about it.
       </p>
       <Projects />
     
