@@ -7,11 +7,13 @@ import Img from "gatsby-image"
 const projectContainer = css`
   display: flex;
   flex-direction: column; 
-  align-items: center;
+  align-items: stretch;
+  
   margin-bottom: .5em;
   
   @media (min-width: 768px) {
     flex-direction: row; 
+    align-items: center;
   }
 `
 const imageContainer = css`
