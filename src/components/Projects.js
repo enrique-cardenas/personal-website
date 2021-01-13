@@ -3,9 +3,15 @@ import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+
 const projectContainer = css`
   display: flex;
+  flex-direction: column; 
   margin-bottom: .5em;
+  
+  @media (min-width: 768px) {
+    flex-direction: row; 
+  }
 `
 const imageContainer = css`
   flex: 0 0 150px;
@@ -55,7 +61,7 @@ const Projects = ({ children }) => {
   return (
     <div>
         {projects.map(({ node }) => (
-        <div key={node.id}>
+        <div key={node.id} >
           <Link
             to={node.fields.slug}
             css={css`

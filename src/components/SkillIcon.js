@@ -10,6 +10,11 @@ const IconContainer = css`
   align-content: center;
   flex-wrap: wrap;
   text-align: center;
+  width: 50%;
+
+  @media (min-width: 768px){  
+    width: 5em;
+  }
 `
 
 export default React.forwardRef((props, ref) => {
