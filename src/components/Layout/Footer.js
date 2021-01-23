@@ -34,14 +34,14 @@ const Footer = () => {
         `}
       >
         <a href="https://github.com/enrique-cardenas"
-        target="_blank" rel="noopener noreferrer">
+        target="_blank" rel="noopener noreferrer" aria-label="github">
           <FaGithub/>
         </a>
         
         {' '}
 
         <a href="https://www.linkedin.com/in/enrique-cardenas/"
-          target="_blank" rel="noopener noreferrer">
+          target="_blank" rel="noopener noreferrer" aria-label="linkedin">
         <FaLinkedin />
         </a>
         

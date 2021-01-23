@@ -39,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
 
 
   return (
-    <Helmet title={seo.title} titleTemplate={seo.title}>
+    <Helmet title={seo.title} titleTemplate={seo.title} htmlAttributes={{lang}}>
       <meta name="description" content={seo.description} />
       <meta name="google-site-verification" content="YCBIAdAapWFm5S-pM_kInkrfxmYJyTPHurMEqaz4WaE" />
       {seo.title && <meta property="og:title" content={seo.title} />}

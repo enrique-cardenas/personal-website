@@ -45,14 +45,15 @@ const navbarItem = css`
   @media only screen and (min-width: 768px) {
     display: inline-block;
     padding-right: 15px;
-    color: gray;
+    color: #757575;
     &:hover {
       color: black;
     }
   }
 `
 const navbarItemResponsive = css`
-  color: gray;
+  color: #757575;
+  
   display: block;
   float: none;
   padding-bottom: 15px;
@@ -65,7 +66,7 @@ const navbarItemResponsive = css`
   }
 `
 const navbarIcon = css`
-  color: gray;
+  color: #757575;
 
   @media (min-width: 768px) {
     display: none;
